@@ -1,0 +1,10 @@
+
+# tasks file for my_apache
+    - name: install apache package
+      yum:
+        name: httpd
+        state: present
+    - name: start the service 
+      service:
+        name: httpd
+        state: started
